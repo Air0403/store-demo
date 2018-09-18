@@ -16,7 +16,21 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="ApplicationContext Dao" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/resource/applicationContext-dao.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="ApplicationContext Service" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext-service.xml</file>
+        </fileset>
+        <fileset id="fileset3" name="ApplicationContext Trans" removed="false">
+          <dependency>fileset</dependency>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext-trans.xml</file>
+        </fileset>
+        <fileset id="fileset4" name="SpringMVC" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring/springMVC.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
