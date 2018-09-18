@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/store-common/store-common.iml" filepath="$PROJECT_DIR$/store-common/store-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-manager/store-manager.iml" filepath="$PROJECT_DIR$/store-manager/store-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-manager-mapper/store-manager-mapper.iml" filepath="$PROJECT_DIR$/store-manager-mapper/store-manager-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-manager-pojo/store-manager-pojo.iml" filepath="$PROJECT_DIR$/store-manager-pojo/store-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-manager-service/store-manager-service.iml" filepath="$PROJECT_DIR$/store-manager-service/store-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-manager-web/store-manager-web.iml" filepath="$PROJECT_DIR$/store-manager-web/store-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-parent/store-parent.iml" filepath="$PROJECT_DIR$/store-parent/store-parent.iml" />
+    </modules>
+  </component>
+</project>
