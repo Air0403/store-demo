@@ -13,7 +13,7 @@ public class PageController {
     /**
      * 打开首页
      */
-    @RequestMapping("/index")
+    @RequestMapping("/")
     public String showIndex() {
         return "index";
     }

@@ -14,13 +14,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="store-common" target="1.7" />
-      <module name="store-manager" target="1.7" />
-      <module name="store-manager-mapper" target="1.7" />
-      <module name="store-manager-pojo" target="1.7" />
-      <module name="store-manager-service" target="1.7" />
-      <module name="store-manager-web" target="1.7" />
-      <module name="store-parent" target="1.7" />
+      <module name="store-common" target="1.8" />
+      <module name="store-manager" target="1.8" />
+      <module name="store-manager-mapper" target="1.8" />
+      <module name="store-manager-pojo" target="1.8" />
+      <module name="store-manager-service" target="1.8" />
+      <module name="store-manager-web" target="1.8" />
+      <module name="store-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

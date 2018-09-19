@@ -1,5 +1,6 @@
 package com.zyt.controller;
 
+import com.zyt.common.pojo.EUDataGridResult;
 import com.zyt.pojo.TbItem;
 import com.zyt.service.ItemService;
 import com.zyt.service.impl.ItemServiceImpl;
@@ -20,5 +21,12 @@ public class ItemController {
     public TbItem getItemById(@PathVariable Long id) {
         TbItem tbItem = itemService.getItemById(id);
         return tbItem;
+    }
+
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public EUDataGridResult getItemList(Integer page, Integer rows) {
+        EUDataGridResult euDataGridResult = itemService.getItemList(page, rows);
+        return euDataGridResult;
     }
 }

@@ -1,5 +1,8 @@
 package com.zyt.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.zyt.common.pojo.EUDataGridResult;
 import com.zyt.mapper.TbItemMapper;
 import com.zyt.pojo.TbItem;
 import com.zyt.pojo.TbItemExample;
@@ -27,5 +30,26 @@ public class ItemServiceImpl implements ItemService {
             return item;
         }
         return null;
+    }
+
+    /**
+     * 商品列表查询
+     * @param page
+     * @param rows
+     * @return
+     */
+    @Override
+    public EUDataGridResult getItemList(int page, int rows) {
+        TbItemExample example = new TbItemExample();
+        // 分页处理
+        PageHelper.startPage(page, rows);
+        List<TbItem> list = itemMapper.selectByExample(example);
+        // 创建一个返回值对象
+        EUDataGridResult result = new EUDataGridResult();
+        result.setRows(list);
+        // 取记录总条数
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        result.setTotal(pageInfo.getTotal());
+        return result;
     }
 }
