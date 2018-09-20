@@ -3,7 +3,6 @@ package com.zyt.controller;
 import com.zyt.common.pojo.EUDataGridResult;
 import com.zyt.pojo.TbItem;
 import com.zyt.service.ItemService;
-import com.zyt.service.impl.ItemServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
